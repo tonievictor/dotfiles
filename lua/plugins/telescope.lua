@@ -11,7 +11,7 @@ return {
 					path_display = { "truncate" },
 					prompt_prefix = "   ",
 					initial_mode = "insert",
-					-- dynamic_preview_title = true,
+					dynamic_preview_title = true,
 					selection_strategy = "reset",
 					sorting_strategy = "ascending",
 					layout_strategy = "vertical",

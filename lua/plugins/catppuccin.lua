@@ -5,14 +5,15 @@ return {
 	priority = 150,
 	config = function()
 		require("catppuccin").setup({
-			flavour = "macchiato",
+			flavour = "mocha",
 			no_italic = true,
 			no_bold = true,
 			integrations = {
 				telescope = {
 					enabled = true,
 					style = "nvchad"
-				}
+				},
+				nvimtree = false,
 			}
 		})
 		-- Ffggjj ehb
