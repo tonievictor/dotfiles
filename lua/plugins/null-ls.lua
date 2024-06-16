@@ -7,6 +7,7 @@ return {
 
 		config = {
 			sources = {
+				null_ls.builtins.completion.luasnip,
 				null_ls.builtins.formatting.clang_format,
 				null_ls.builtins.formatting.gofumpt,
 				null_ls.builtins.formatting.goimports_reviser,

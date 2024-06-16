@@ -23,7 +23,8 @@ return {
 			}
 		})
 		vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<Cr>', {
-			noremap = true, silent = true
+			noremap = true, silent = true,
+			desc = "toggle the file explorer"
 		})
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
