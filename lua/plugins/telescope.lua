@@ -1,7 +1,8 @@
 return {
 	{
-		'nvim-telescope/telescope.nvim', tag = '0.1.6',
-		dependencies = { 'nvim-lua/plenary.nvim'},
+		'nvim-telescope/telescope.nvim',
+		tag = '0.1.6',
+		dependencies = { 'nvim-lua/plenary.nvim' },
 		config = function()
 			local telescope = require("telescope")
 			local actions = require("telescope.actions")
@@ -17,14 +18,8 @@ return {
 					layout_strategy = "vertical",
 					results_title = false,
 					layout_config = {
-						horizontal = {
-							prompt_position = "top",
-							preview_height = 0.7,
-							preview_width = 0.6,
-							results_width = 0.8,
-						},
 						vertical = {
-							preview_height = 0.7,
+							preview_height = 0.73,
 							prompt_position = "top",
 							mirror = false,
 						},
@@ -49,10 +44,11 @@ return {
 					extensions_list = { "themes", "terms" },
 				},
 				pickers = {
-					live_grep = {
+					find_files = {
 						layout_config = {
 							vertical = {
-								preview_height = 0.75,
+								-- preview_height = 0.75,
+								preview_cutoff = 120,
 							}
 						}
 					}
@@ -61,17 +57,17 @@ return {
 			})
 			local builtin = require("telescope.builtin")
 			vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "find files" })
-			vim.keymap.set('n', '<leader>fg', builtin.live_grep, {desc = "grep a sring"})
-			vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "find a buffer"})
-			vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = "help tags"})
-			vim.keymap.set('n', '<leader>fz', builtin.current_buffer_fuzzy_find, {desc = "grep in current buffer"})
-			vim.keymap.set('n', '<leader>fs', builtin.grep_string, {desc = "find a word"})
+			vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "grep a sring" })
+			vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "find a buffer" })
+			vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "help tags" })
+			vim.keymap.set('n', '<leader>fz', builtin.current_buffer_fuzzy_find, { desc = "grep in current buffer" })
+			vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = "find a word" })
 		end
 	},
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
-		config =  function()
-			require("telescope").setup ({
+		config = function()
+			require("telescope").setup({
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown {}
