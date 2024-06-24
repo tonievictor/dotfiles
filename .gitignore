@@ -1,0 +1,12 @@
+# ignore everything by defualt
+*
+
+!.gitignore
+
+# tracked folders
+!nvim/
+!tmux/
+
+# track all content
+!nvim/**
+!tmux/**
