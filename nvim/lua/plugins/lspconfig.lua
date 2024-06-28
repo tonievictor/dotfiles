@@ -5,7 +5,7 @@ return {
 	},
 	config = function()
 		require "custom.astro"
-		require "custom.c"
+		-- require "custom.c"
 		require "custom.css"
 		require "custom.gleam"
 		require "custom.go"

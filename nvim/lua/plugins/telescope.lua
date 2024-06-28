@@ -9,6 +9,7 @@ return {
 
 			telescope.setup({
 				defaults = {
+					file_ignore_patterns = { "node_modules" },
 					path_display = { "truncate" },
 					prompt_prefix = "   ",
 					initial_mode = "insert",
@@ -53,7 +54,6 @@ return {
 						}
 					}
 				},
-				file_ignore_patterns = { "node_modules" },
 			})
 			local builtin = require("telescope.builtin")
 			vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "find files" })

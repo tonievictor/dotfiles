@@ -13,6 +13,10 @@ return {
 					enabled = true,
 					style = "nvchad"
 				},
+				treesitter = {enabled = true, style = "nvchad"},
+				indent_blankline = { enabled = true },
+				treesitter_context = true,
+				which_key = true,
 			}
 		})
 		-- Ffggjj ehb
