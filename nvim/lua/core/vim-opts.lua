@@ -1,6 +1,7 @@
 -- Indentation
 vim.opt.expandtab = false
 vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.smartindent = true
 
 vim.opt.cursorline = true
@@ -35,5 +36,4 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.shortmess:append "sI"
-
 vim.opt.textwidth = 80

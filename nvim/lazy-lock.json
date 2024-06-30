@@ -1,4 +1,5 @@
 {
+  "AdvancedNewFile.nvim": { "branch": "main", "commit": "9b4576dcf916d848148241e7269c9cd78f299b22" },
   "Comment.nvim": { "branch": "master", "commit": "e30b7f2008e52442154b66f7c519bfd2f1e32acb" },
   "LuaSnip": { "branch": "master", "commit": "50fcf17db7c75af80e6b6109acfbfb4504768780" },
   "catppuccin": { "branch": "main", "commit": "cc8e290d4c0d572171243087f8541e49be2c8764" },

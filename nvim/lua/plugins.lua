@@ -10,11 +10,9 @@ local plugins = {
 			vim.g.rustfmt_autosave = 1
 		end
 	},
-	-- {
-	-- 	-- Working on a custom plugin
-	-- 	dir = "~/projects/poieo",
-	-- 	name = "poieo"
-	-- 	}
+	{
+		"Mohammed-Taher/AdvancedNewFile.nvim",
+	}
 }
 
 return plugins
