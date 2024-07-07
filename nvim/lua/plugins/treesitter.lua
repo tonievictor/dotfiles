@@ -17,6 +17,10 @@ return {
 			},
 			sync_install = false,
 			highlight = { enable = true },
+			autotag = {
+				enable = true,
+				filetypes = { "html", "xml", "php", "vue" },
+			},
 			indent = { enable = true },
 		})
 	end

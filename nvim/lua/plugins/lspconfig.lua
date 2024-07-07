@@ -6,6 +6,7 @@ return {
 	config = function()
 		require "custom.astro"
 		-- require "custom.c"
+		-- require "custom.rust"
 		require "custom.css"
 		require "custom.gleam"
 		require "custom.go"
@@ -13,7 +14,6 @@ return {
 		require "custom.lua"
 		require "custom.python"
 		require "custom.typescript"
-		require "custom.rust"
 		require "custom.zig"
 
 		local signs = { Error = "", Warn = "", Hint = "", Info = "" }

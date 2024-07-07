@@ -19,7 +19,7 @@ return {
 			require("luasnip.loaders.from_vscode").lazy_load()
 			cmp.setup({
 				preselect = cmp.PreselectMode.None,
-				completion = { keyword_length = 1 },
+				completion = { keyword_length = 1, autocomplete = false },
 				view = {
 					docs = { auto_open = false }
 				},
@@ -39,6 +39,7 @@ return {
 					}
 				},
 				mapping = cmp.mapping.preset.insert({
+					['<C-Space>'] = cmp.mapping.complete(),
 					["<C-p>"] = cmp.mapping.select_prev_item(),
 					["<C-n>"] = cmp.mapping.select_next_item(),
 					["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -84,11 +85,11 @@ return {
 					})
 				},
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" },
-					{ name = "luasnip" },
-					{ name = "buffer",  keyword = 5 },
-					{ name = "nvim_lua" },
-					{ name = "path" }
+					{ name = "nvim_lsp", keyword_length = 5 },
+					{ name = "luasnip",  keyword_length = 5 },
+					{ name = "buffer",   keyword_length = 5 },
+					{ name = "nvim_lua", keyword_length = 5 },
+					{ name = "path",     keyword_length = 5 }
 				}),
 			})
 		end
