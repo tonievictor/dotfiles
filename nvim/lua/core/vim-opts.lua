@@ -28,6 +28,7 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.opt.relativenumber = true
 
 -- Backups and swap stuff
 vim.opt.backup = false
@@ -37,3 +38,6 @@ vim.opt.undofile = true
 
 vim.opt.shortmess:append "sI"
 vim.opt.textwidth = 80
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true

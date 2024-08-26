@@ -18,6 +18,7 @@ return {
 					sorting_strategy = "ascending",
 					layout_strategy = "vertical",
 					results_title = false,
+					style = "borderless",
 					layout_config = {
 						vertical = {
 							preview_height = 0.73,
@@ -33,7 +34,7 @@ return {
 						i = {
 							["<C-k>"] = actions.move_selection_previous,
 							["<C-j>"] = actions.move_selection_next,
-							["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist
+							-- ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist
 						},
 						n = {
 							["q"] = actions.close

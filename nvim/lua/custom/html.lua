@@ -1,5 +1,4 @@
 local lspconfig = require("lspconfig")
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local util = require("lspconfig.util")
 
 lspconfig.html.setup ({
@@ -12,5 +11,5 @@ cmd = { 'vscode-html-language-server', '--stdio' },
       provideFormatter = true,
       embeddedLanguages = { css = true, javascript = true },
       configurationSection = { 'html', 'css', 'javascript' },
-    },	capabilities = capabilities,
+    }
 })

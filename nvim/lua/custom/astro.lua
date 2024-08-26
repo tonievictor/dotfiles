@@ -1,6 +1,5 @@
 local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local function get_typescript_server_path(root_dir)
 	local project_root = util.find_node_modules_ancestor(root_dir)
@@ -12,7 +11,6 @@ lspconfig.astro.setup(
 		default_config = {
 			cmd = { 'astro-ls', '--stdio' },
 			filetypes = { 'astro' },
-			capabilities = capabilities,
 			root_dir = util.root_pattern('package.json', 'tsconfig.json', 'jsconfig.json', '.git'),
 			init_options = {
 				typescript = {},

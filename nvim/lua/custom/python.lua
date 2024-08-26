@@ -1,5 +1,4 @@
 local lspconfig = require("lspconfig")
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local util = require('lspconfig.util')
 
 local function organize_imports()
@@ -33,5 +32,4 @@ lspconfig.pyright.setup({
       description = 'Organize Imports',
     },
 	filetypes = { "python" },
-	capabilities = capabilities
 })

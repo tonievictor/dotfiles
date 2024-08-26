@@ -1,6 +1,7 @@
 return {
 	'numToStr/Comment.nvim',
-	dependencies = {'JoosepAlviste/nvim-ts-context-commentstring'},
+	dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' },
+	lazy = true,
 	opts = {
 		---Add a space b/w comment and the line
 		padding = true,
