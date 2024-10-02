@@ -2,7 +2,6 @@ return {
 	"neovim/nvim-lspconfig",
 	config = function()
 		require "custom.astro"
-		-- require "custom.c"
 		-- require "custom.rust"
 		require "custom.css"
 		require "custom.gleam"
@@ -13,7 +12,7 @@ return {
 		require "custom.typescript"
 		require "custom.zig"
 
-		vim.diagnostic.config({ virtual_text = false, virtual_lines = false, signs = false })
+		vim.diagnostic.config({ virtual_text = false, virtual_line = false, signs = false })
 
 		-- keymaps
 		vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "hover" })

@@ -6,7 +6,9 @@
 # tracked folders
 !nvim/
 !tmux/
+!bash/
 
 # track all content
 !nvim/**
 !tmux/**
+!bash/**
