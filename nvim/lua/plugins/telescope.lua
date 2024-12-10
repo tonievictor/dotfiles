@@ -1,11 +1,16 @@
 return {
 	{
 		'nvim-telescope/telescope.nvim',
-		tag = '0.1.6',
-		dependencies = { 'nvim-lua/plenary.nvim' },
+		branch = '0.1.x',
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
+		},
 		config = function()
 			local telescope = require("telescope")
 			local actions = require("telescope.actions")
+			telescope.load_extension('fzf')
+
 
 			telescope.setup({
 				defaults = {
@@ -34,10 +39,9 @@ return {
 						i = {
 							["<C-k>"] = actions.move_selection_previous,
 							["<C-j>"] = actions.move_selection_next,
-							-- ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist
 						},
 						n = {
-							["q"] = actions.close
+							["q"] = actions.close,
 						}
 					},
 					winblend = 0,
@@ -63,6 +67,11 @@ return {
 			vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "help tags" })
 			vim.keymap.set('n', '<leader>fz', builtin.current_buffer_fuzzy_find, { desc = "grep in current buffer" })
 			vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = "find a word" })
+			vim.keymap.set("n", "<space>en", function()
+				builtin.find_files {
+					cwd = vim.fn.stdpath("config")
+				}
+			end, {desc= "find files in config"})
 		end
 	},
 	{

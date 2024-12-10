@@ -16,8 +16,6 @@ return {
 					"clangd",
 					"rust_analyzer",
 					"pyright",
-					"tsserver",
-					"sqlls",
 					"dockerls",
 					"astro",
 					"cssls",

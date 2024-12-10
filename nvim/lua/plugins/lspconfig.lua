@@ -2,7 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	config = function()
 		require "custom.astro"
-		-- require "custom.rust"
+		require "custom.rust"
 		require "custom.css"
 		require "custom.gleam"
 		require "custom.go"
