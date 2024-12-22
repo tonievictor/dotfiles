@@ -49,6 +49,9 @@ return {
 					borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
 					extensions_list = { "themes", "terms" },
 				},
+				extensions = {
+					fzf = {}
+				},
 				pickers = {
 					find_files = {
 						layout_config = {
@@ -71,7 +74,7 @@ return {
 				builtin.find_files {
 					cwd = vim.fn.stdpath("config")
 				}
-			end, {desc= "find files in config"})
+			end, { desc = "find files in config" })
 		end
 	},
 	{

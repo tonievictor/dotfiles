@@ -12,6 +12,8 @@ return {
 		require "custom.typescript"
 		require "custom.zig"
 		require "custom.asm"
+		require "custom.ruby"
+		require "custom.rubocop"
 
 		vim.diagnostic.config({ virtual_text = false, virtual_line = false, signs = false })
 

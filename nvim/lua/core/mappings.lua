@@ -9,3 +9,8 @@ vim.keymap.set("n", "<Right>", "<Nop>", { noremap = true })
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true })
+
+vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>", {})
+vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>", {})
+
+vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>", {})
