@@ -7,8 +7,10 @@
 !nvim/
 !tmux/
 !zsh/
+!ghostty/
 
 # track all content
 !nvim/**
 !tmux/**
 !zsh/**
+!ghostty/**
