@@ -2,7 +2,6 @@ return {
 	"neovim/nvim-lspconfig",
 	config = function()
 		require "custom.astro"
-		require "custom.rust"
 		require "custom.css"
 		require "custom.gleam"
 		require "custom.go"
@@ -12,8 +11,6 @@ return {
 		require "custom.typescript"
 		require "custom.zig"
 		require "custom.asm"
-		require "custom.ruby"
-		require "custom.rubocop"
 
 		vim.diagnostic.config({ virtual_text = false, virtual_line = false, signs = false })
 
