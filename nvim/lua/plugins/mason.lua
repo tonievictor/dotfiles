@@ -1,7 +1,7 @@
 return {
 	{
 		"williamboman/mason.nvim",
-		config =  function()
+		config = function()
 			require("mason").setup({})
 		end
 	},
@@ -10,15 +10,16 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"zls",
-					"lua_ls",
-					"gopls",
-					"clangd",
-					"pyright",
+					"asm_lsp",
 					"astro",
 					"cssls",
-					"html",
 					"cssmodules_ls",
+					"gopls",
+					"html",
+					"lua_ls",
+					"pyright",
+					"ts_ls",
+					"zls",
 				}
 			})
 		end
