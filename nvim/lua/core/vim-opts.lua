@@ -8,6 +8,8 @@ vim.opt.cursorline = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.g.rustfmt_fail_silently = 1
+
 -- sync editor clipboard and machine's
 vim.o.clipboard = "unnamedplus"
 
