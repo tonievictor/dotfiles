@@ -1,15 +1,30 @@
 # [PROMPT]
 autoload -Uz add-zsh-hook vcs_info
+
 setopt prompt_subst
+
 add-zsh-hook precmd vcs_info
+
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git*' formats '%F{blue}(%f%F{red}%b%f%F{blue})%f'
+
 PROMPT='%F{cyan}%1~%f ${vcs_info_msg_0_} %F{yellow}%(?.✓.×)%f '
+
+# [[ EDITING MODE]]
+set -o vi
+
+# [[ KEYBINDING ]]
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+
+# [FZF]
+source <(fzf --zsh)
 
 # [HISTORY]
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+
 setopt histignorealldups sharehistory
 setopt HIST_IGNORE_SPACE
 
