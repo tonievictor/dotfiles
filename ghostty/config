@@ -5,9 +5,8 @@ resize-overlay = never
 shell-integration = zsh
 shell-integration-features = no-cursor
 cursor-style-blink = false
-cursor-style = bar 
 mouse-hide-while-typing = true
-fullscreen=true
 keybind = f11=toggle_fullscreen
+fullscreen=true
 window-padding-y = 0
 window-padding-x = 0
