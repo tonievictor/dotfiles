@@ -8,9 +8,11 @@
 !tmux/
 !zsh/
 !ghostty/
+!git/
 
 # track all content
 !nvim/**
 !tmux/**
 !zsh/**
 !ghostty/**
+!git/**

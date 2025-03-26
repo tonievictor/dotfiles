@@ -12,7 +12,6 @@ return {
 			},
 		}
 
-		-- use the inbuilt RustFmt command to format rust code.
 		vim.api.nvim_create_augroup('rust_formatting', { clear = true })
 		vim.api.nvim_create_autocmd('FileType', {
 			group = 'rust_formatting',

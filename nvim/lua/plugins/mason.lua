@@ -10,7 +10,6 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"asm_lsp",
 					"astro",
 					"cssls",
 					"cssmodules_ls",
