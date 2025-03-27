@@ -12,9 +12,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local opts = {
-}
 
 require("core.vim-opts")
 require("core.mappings")
-require("lazy").setup("plugins", opts)
+require("lazy").setup("plugins", {})
+vim.lsp.config('*', { root_markers = { '.git' } })
+vim.lsp.enable({ 'clangd', 'gopls', 'lua', 'zig', 'css', 'html', 'gleam', 'astro', 'python' })

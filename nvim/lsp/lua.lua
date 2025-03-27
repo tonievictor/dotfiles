@@ -1,9 +1,8 @@
-local lspconfig = require("lspconfig")
-
-lspconfig.lua_ls.setup {
+return {
+	cmd = { "lua-language-server" },
 	on_init = function(client)
 		local path = client.workspace_folders[1].name
-		if vim.loop.fs_stat(path..'/.luarc.json') or vim.loop.fs_stat(path..'/.luarc.jsonc') then
+		if vim.loop.fs_stat(path .. '/.luarc.json') or vim.loop.fs_stat(path .. '/.luarc.jsonc') then
 			return
 		end
 		client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
@@ -21,6 +20,7 @@ lspconfig.lua_ls.setup {
 			}
 		})
 	end,
+	filetypes = { 'lua' },
 	settings = {
 		Lua = {}
 	},

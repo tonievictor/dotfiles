@@ -43,3 +43,11 @@ vim.opt.textwidth = 80
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.diagnostic.config({
+	virtual_text = false,
+	virtual_lines = false,
+	virtual_text = { current_line = true },
+	signs = false,
+	underline = false,
+})

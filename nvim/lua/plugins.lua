@@ -4,16 +4,6 @@ local plugins = {
 		lazy = false
 	},
 	{
-		'mrcjkb/rustaceanvim',
-		version = '^5', -- Recommended
-		lazy = false, -- This plugin is already lazy
-		server = {
-			['rust-analyzer'] = {
-				single_file_support = true,
-			},
-		},
-	},
-	{
 		'windwp/nvim-autopairs',
 		event = "InsertEnter",
 		opts = {
