@@ -28,4 +28,5 @@ vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { desc = "go to declaration" 
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "go to definition" })
 vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, { desc = "go to implementation" })
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = "go to references" })
+vim.keymap.set('n', 'gn', vim.lsp.buf.rename, { desc = "rename symbol" })
 vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, { desc = "code actions" })
