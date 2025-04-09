@@ -1,5 +1,5 @@
 return {
 	cmd = { 'pyright-langserver', '--stdio' },
-	filetypes = { 'python', 'py' },
+	filetypes = { 'python' },
 	single_file_support = true,
 }

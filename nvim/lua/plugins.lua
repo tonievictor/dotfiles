@@ -23,6 +23,11 @@ local plugins = {
 		}
 		-- use opts = {} for passing setup options
 		-- this is equivalent to setup({}) function
+	},
+	{
+		'mrcjkb/rustaceanvim',
+		version = '^6', -- Recommended
+		lazy = false, -- This plugin is already lazy
 	}
 }
 
