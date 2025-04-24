@@ -17,6 +17,7 @@ return {
 			},
 			sync_install = false,
 			highlight = { enable = true },
+			indent = { enable = true },
 			autopairs = {
 				enable = true,
 				filetypes = { "html", "xml", "php", "vue" },

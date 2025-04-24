@@ -28,3 +28,14 @@ vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "go to definition" })
 vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, { desc = "go to implementation" })
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = "go to references" })
 vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, { desc = "code actions" })
+
+--
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+--
+vim.keymap.set("n", "<leader>gf", function()
+	require("conform").format({ async = true, lsp_fallback = true })
+end, { noremap = true, silent = true })
