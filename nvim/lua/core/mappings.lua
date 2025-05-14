@@ -39,3 +39,5 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>gf", function()
 	require("conform").format({ async = true, lsp_fallback = true })
 end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>td", "<cmd>e ~/.todo.md<CR>", {})
