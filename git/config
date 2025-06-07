@@ -11,6 +11,7 @@
 	gpgsign = true
 [core]
 	excludesfile = /home/user/.gitignore
+	whitespace = error
 [column]
 	ui = auto
 [branch]

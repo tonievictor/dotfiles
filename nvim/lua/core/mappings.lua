@@ -40,4 +40,12 @@ vim.keymap.set("n", "<leader>gf", function()
 	require("conform").format({ async = true, lsp_fallback = true })
 end, { noremap = true, silent = true })
 
+-- Open todo file
 vim.keymap.set("n", "<leader>td", "<cmd>e ~/.todo.md<CR>", {})
+
+-- Toggle vim diagnostic text
+vim.keymap.set("n", "<leader>dt", function()
+	vim.diagnostic.config({
+		virtual_text = not vim.g.diagnostics_virtual_text,
+	})
+end, {desc = "toggle virtual text"})
